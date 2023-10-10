@@ -1,7 +1,11 @@
 "Hello World" 
-<iframe
-	src="https://stereoid-svi-problem-detector.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/{3.47.1}/gradio.js"
+></script>
+<gradio-app src="https://stereoid-svi-problem-detector.hf.space"></gradio-app>
+<gradio-app
+	space="gradio/Echocardiogram-Segmentation"
+	eager="true"
+	initial_height="100px"
+></gradio-app>
