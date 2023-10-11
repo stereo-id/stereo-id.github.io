@@ -10,11 +10,3 @@
 	control_page_title="true"
 	initial_height="100px"
 ></gradio-app>
-<script>
-	function handleLoadComplete() {
-		console.log("Embedded space has finished rendering");
-	}
-
-	const gradioApp = document.querySelector("gradio-app");
-	gradioApp.addEventListener("render", handleLoadComplete);
-</script>
