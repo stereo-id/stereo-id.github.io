@@ -1,5 +1,13 @@
 "Hello World" 
 <html>
+    <head>
+    <style>
+        gradio-app {
+            max-width: 100px; /* 调整Gradio组件的最大宽度 */
+            margin: 0 auto; /* 居中对齐Gradio组件 */
+        }
+    </style>
+</head>
 <body>
     <!-- 加载 Gradio 脚本 -->
     <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.47.1/gradio.js"></script>
@@ -21,9 +29,9 @@
 
         .container {
             text-align: center;
-            margin: 20px auto;
+            margin: 100px auto;
             background-color: #fff; /* 设置容器背景颜色 */
-            border: 1px solid #ccc; /* 添加容器边框 */
+            border: 5px solid #ccc; /* 添加容器边框 */
             padding: 20px; /* 添加容器内边距 */
             max-width: 800px; /* 限定容器最大宽度 */
         }
@@ -56,6 +64,7 @@
             font-size: 18px; /* 调整描述文本的字体大小 */
             line-height: 1.5; /* 设置行高，增加可读性 */
             margin-top: 20px; /* 调整描述与图片之间的间距 */
+            text-align: left; /* 左对齐描述文本 */
         }
 
         .image-description {
