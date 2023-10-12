@@ -8,3 +8,51 @@
     <gradio-app src="https://stereoid-svi-problem-detector.hf.space"></gradio-app>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 300px; /* 调整图片的最大宽度 */
+        }
+        h1 {
+            text-align: center; /* 文本居中 */
+            font-size: 24px; /* 大字体 */
+            font-weight: bold; /* 粗体 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Abstract</h1>
+    
+    <div class="image-container">
+        <div>
+            <img src="left_eye_actual.jpg" alt="左眼实际图片">
+            <p>左眼实际图片</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div>
+            <img src="right_eye_actual.jpg" alt="右眼实际图片">
+            <p>右眼实际图片</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div>
+            <img src="right_eye_predicted.jpg" alt="右眼预测图片">
+            <p>右眼预测图片</p>
+        </div>
+    </div>
+
+    <p>Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.</p>
+</body>
+</html>
+
