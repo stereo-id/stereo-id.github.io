@@ -3,7 +3,7 @@
     <head>
     <style>
         gradio-app {
-            max-width: 50px; /* 调整Gradio组件的最大宽度 */
+            max-width: 100px; /* 调整Gradio组件的最大宽度 */
             margin: 0 auto; /* 居中对齐Gradio组件 */
         }
     </style>
@@ -18,57 +18,57 @@
 </html>
 
 
+<!DOCTYPE html>
 <html>
 <head>
     <style>
         body {
-            font-size: 18px; /* 增大字体大小 */
+            font-size: 18px;
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9; /* 更淡的背景颜色 */
+            background-color: #f9f9f9;
         }
 
         .container {
             text-align: center;
-            margin: 50px auto; /* 增加垂直间距 */
+            margin: 50px auto;
             background-color: #fff;
-            border: 1px solid #e1e1e1; /* 更轻的边框颜色 */
-            border-radius: 10px; /* 圆角边框 */
-            padding: 30px; /* 增加内边距 */
-            max-width: 900px; /* 增大最大宽度 */
+            border: 1px solid #e1e1e1;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 1100px; /* 增大最大宽度 */
         }
 
         .image-row {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            flex-wrap: wrap; /* 图片自动换行 */
         }
 
         .image-container {
             text-align: center;
-            margin: 20px; /* 增加图片容器之间的间距 */
+            margin: 20px;
         }
 
         .image-container img {
             max-width: 300px;
-            border: 2px solid #e1e1e1; /* 更显眼的图片边框 */
+            border: 2px solid #e1e1e1;
             border-radius: 10px;
         }
 
         h1 {
-            font-size: 48px; /* 更大的标题字体 */
+            font-size: 48px;
             font-weight: bold;
-            margin-bottom: 30px; /* 增加标题与内容之间的间距 */
+            margin-bottom: 30px;
             text-align: center;
-            color: #333; /* 标题字体颜色 */
+            color: #333;
         }
 
         p.description {
-            font-size: 20px; /* 增大描述文本的字体大小 */
+            font-size: 20px;
             line-height: 1.6;
-            text-align: left; /* 左对齐描述文本 */
-            margin-top: 30px; /* 增加描述与图片之间的间距 */
-            color: #555; /* 描述文本字体颜色 */
+            text-align: left;
+            margin-top: 30px;
+            color: #555;
         }
 
         .image-description {
@@ -79,7 +79,10 @@
 <body>
     <div class="container">
         <h1>Abstract</h1>
-        <p class="description">Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.<br>The following are examples of left and right eye screenshots in VR games where we have detected abnormalities.</p>
+        <p class="description">
+            &nbsp;&nbsp;Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.<br>
+            &nbsp;&nbsp;The following are examples of left and right eye screenshots in VR games where we have detected abnormalities.
+        </p>
 
         <div class="image-row">
             <div class="image-container">
@@ -100,3 +103,4 @@
     </div>
 </body>
 </html>
+
