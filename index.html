@@ -1,9 +1,9 @@
-"Hello World" 
+<!DOCTYPE html>
 <html>
     <head>
     <style>
         gradio-app {
-            max-width: 100px; /* 调整Gradio组件的最大宽度 */
+            max-width: 50px; /* 调整Gradio组件的最大宽度 */
             margin: 0 auto; /* 居中对齐Gradio组件 */
         }
     </style>
@@ -17,54 +17,58 @@
 </body>
 </html>
 
-<!DOCTYPE html>
+
 <html>
 <head>
     <style>
         body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; /* 使用常见的字体 */
-            background-color: #f0f0f0; /* 设置背景颜色 */
+            font-size: 18px; /* 增大字体大小 */
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9; /* 更淡的背景颜色 */
         }
 
         .container {
             text-align: center;
-            margin: 100px auto;
-            background-color: #fff; /* 设置容器背景颜色 */
-            border: 5px solid #ccc; /* 添加容器边框 */
-            padding: 20px; /* 添加容器内边距 */
-            max-width: 800px; /* 限定容器最大宽度 */
+            margin: 50px auto; /* 增加垂直间距 */
+            background-color: #fff;
+            border: 1px solid #e1e1e1; /* 更轻的边框颜色 */
+            border-radius: 10px; /* 圆角边框 */
+            padding: 30px; /* 增加内边距 */
+            max-width: 900px; /* 增大最大宽度 */
         }
 
         .image-row {
             display: flex;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap; /* 图片自动换行 */
         }
 
         .image-container {
             text-align: center;
-            margin: 10px; /* 调整图片容器之间的间距 */
+            margin: 20px; /* 增加图片容器之间的间距 */
         }
 
         .image-container img {
-            max-width: 250px; /* 调整图片的最大宽度 */
-            border: 1px solid #ccc; /* 添加图片边框 */
-            border-radius: 8px; /* 添加圆角边框 */
+            max-width: 300px;
+            border: 2px solid #e1e1e1; /* 更显眼的图片边框 */
+            border-radius: 10px;
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 48px; /* 更大的标题字体 */
             font-weight: bold;
-            margin-bottom: 20px; /* 调整标题与内容之间的间距 */
-            text-align: center; /* 水平居中对齐标题 */
+            margin-bottom: 30px; /* 增加标题与内容之间的间距 */
+            text-align: center;
+            color: #333; /* 标题字体颜色 */
         }
 
         p.description {
-            font-size: 18px; /* 调整描述文本的字体大小 */
-            line-height: 1.5; /* 设置行高，增加可读性 */
-            margin-top: 20px; /* 调整描述与图片之间的间距 */
+            font-size: 20px; /* 增大描述文本的字体大小 */
+            line-height: 1.6;
             text-align: left; /* 左对齐描述文本 */
+            margin-top: 30px; /* 增加描述与图片之间的间距 */
+            color: #555; /* 描述文本字体颜色 */
         }
 
         .image-description {
