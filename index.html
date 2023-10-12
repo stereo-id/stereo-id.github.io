@@ -14,7 +14,7 @@
 <head>
     <style>
         body {
-            font-size: 16px; /* 调整整个文档的字体大小 */
+            font-size: 16px;
         }
 
         .container {
@@ -25,6 +25,8 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            border: 1px solid #ccc; /* Add a border */
+            padding: 20px; /* Add padding */
             margin: 20px 0;
         }
 
@@ -33,16 +35,20 @@
         }
 
         .image-container img {
-            max-width: 300px; /* 调整图片的最大宽度 */
+            max-width: 300px;
         }
 
         h1 {
-            font-size: 36px; /* 大字体 */
-            font-weight: bold; /* 粗体 */
+            font-size: 36px; /* Large font */
+            font-weight: bold; /* Bold */
         }
 
         p.description {
-            font-size: 20px; /* 调整Description的字体大小 */
+            font-size: 20px;
+        }
+
+        .image-description {
+            text-align: center;
         }
     </style>
 </head>
@@ -51,23 +57,24 @@
     
     <div class="container">
         <div class="image-row">
+            <div class="image-description">
+                <p class="description">Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.The following are examples of left and right eye screenshots in VR games where we have detected abnormalities.</p>
+            </div>
             <div class="image-container">
-                <img src="real_left.png" alt="左眼实际图片">
-                <p>左眼实际图片</p>
+                <img src="real_left.png" alt="Actual Image - Left Eye">
+                <p>Actual Image - Left Eye</p>
             </div>
 
             <div class="image-container">
-                <img src="real_right.png" alt="右眼实际图片">
-                <p>右眼实际图片</p>
+                <img src="real_right.png" alt="Actual Image - Right Eye">
+                <p>Actual Image - Right Eye</p>
             </div>
 
             <div class="image-container">
-                <img src="fake_right.png" alt="右眼预测图片">
-                <p>右眼预测图片</p>
+                <img src="fake_right.png" alt="Predicted Image - Right Eye">
+                <p>Predicted Image - Right Eye</p>
             </div>
         </div>
     </div>
-
-    <p class="description">Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.</p>
 </body>
 </html>
