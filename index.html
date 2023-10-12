@@ -15,36 +15,47 @@
     <style>
         body {
             font-size: 16px;
+            font-family: Arial, sans-serif; /* 使用常见的字体 */
+            background-color: #f0f0f0; /* 设置背景颜色 */
         }
 
         .container {
             text-align: center;
+            margin: 20px auto;
+            background-color: #fff; /* 设置容器背景颜色 */
+            border: 1px solid #ccc; /* 添加容器边框 */
+            padding: 20px; /* 添加容器内边距 */
+            max-width: 800px; /* 限定容器最大宽度 */
         }
 
         .image-row {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            border: 1px solid #ccc; /* Add a border */
-            padding: 20px; /* Add padding */
-            margin: 20px 0;
         }
 
         .image-container {
             text-align: center;
+            margin: 10px; /* 调整图片容器之间的间距 */
         }
 
         .image-container img {
-            max-width: 300px;
+            max-width: 250px; /* 调整图片的最大宽度 */
+            border: 1px solid #ccc; /* 添加图片边框 */
+            border-radius: 8px; /* 添加圆角边框 */
         }
 
         h1 {
-            font-size: 36px; /* Large font */
-            font-weight: bold; /* Bold */
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px; /* 调整标题与内容之间的间距 */
+            text-align: center; /* 水平居中对齐标题 */
         }
 
         p.description {
-            font-size: 20px;
+            font-size: 18px; /* 调整描述文本的字体大小 */
+            line-height: 1.5; /* 设置行高，增加可读性 */
+            margin-top: 20px; /* 调整描述与图片之间的间距 */
         }
 
         .image-description {
@@ -53,13 +64,11 @@
     </style>
 </head>
 <body>
-    <h1>Abstract</h1>
-    
     <div class="container">
+        <h1>Abstract</h1>
+        <p class="description">Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.<br>The following are examples of left and right eye screenshots in VR games where we have detected abnormalities.</p>
+
         <div class="image-row">
-            <div class="image-description">
-                <p class="description">Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.The following are examples of left and right eye screenshots in VR games where we have detected abnormalities.</p>
-            </div>
             <div class="image-container">
                 <img src="real_left.png" alt="Actual Image - Left Eye">
                 <p>Actual Image - Left Eye</p>
