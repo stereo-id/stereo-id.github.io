@@ -13,46 +13,61 @@
 <html>
 <head>
     <style>
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        body {
+            font-size: 16px; /* 调整整个文档的字体大小 */
         }
+
+        .container {
+            text-align: center;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
         .image-container img {
             max-width: 300px; /* 调整图片的最大宽度 */
         }
+
         h1 {
-            text-align: center; /* 文本居中 */
-            font-size: 24px; /* 大字体 */
+            font-size: 36px; /* 大字体 */
             font-weight: bold; /* 粗体 */
+        }
+
+        p.description {
+            font-size: 20px; /* 调整Description的字体大小 */
         }
     </style>
 </head>
 <body>
     <h1>Abstract</h1>
     
-    <div class="image-container">
-        <div>
-            <img src="real_left.png" alt="左眼实际图片">
-            <p>左眼实际图片</p>
+    <div class="container">
+        <div class="image-row">
+            <div class="image-container">
+                <img src="real_left.png" alt="左眼实际图片">
+                <p>左眼实际图片</p>
+            </div>
+
+            <div class="image-container">
+                <img src="real_right.png" alt="右眼实际图片">
+                <p>右眼实际图片</p>
+            </div>
+
+            <div class="image-container">
+                <img src="fake_right.png" alt="右眼预测图片">
+                <p>右眼预测图片</p>
+            </div>
         </div>
     </div>
 
-    <div class="image-container">
-        <div>
-            <img src="real_right.png" alt="右眼实际图片">
-            <p>右眼实际图片</p>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <div>
-            <img src="fake_right.png" alt="右眼预测图片">
-            <p>右眼预测图片</p>
-        </div>
-    </div>
-
-    <p>Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.</p>
+    <p class="description">Description: Based on our detector, we compared the actual picture of the right eye with the predicted picture, and finally detected the problem of Stereoscopic Visual Inconsistencies in this set of VR views.</p>
 </body>
 </html>
-
